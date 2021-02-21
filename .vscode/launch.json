@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/index.js"
+        },
+
+        {
+            "type": "pwa-chrome",
+            "name": "ClientDebug",
+            "request": "launch",
+            "url": "http://localhost:3000"
+        }
+    ]
+}
